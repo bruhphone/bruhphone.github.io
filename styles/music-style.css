@@ -32,17 +32,7 @@ li {
     letter-spacing: 1px;
 }
 
-#jack-portrait {
-    display: block;
-    margin: 0 auto;
-    width: 212px;
-}
-
 a:hover {
     color: red;
     border: 1px solid black;
 }
-
-/* .elevator-pitch-box {
-    margin: 20px 1024px auto 20px;
-} */
