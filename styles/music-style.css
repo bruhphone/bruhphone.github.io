@@ -36,3 +36,11 @@ a:hover {
     color: red;
     border: 1px solid black;
 }
+
+a:link {
+    color: blue;
+}
+
+nav a:visited {
+    color: blue;
+}
