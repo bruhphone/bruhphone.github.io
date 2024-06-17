@@ -51,6 +51,25 @@ nav a:visited {
         color: black;
         /* text-shadow: 3px 3px 1px blue; */
     }
+
+    h2 {
+        font-size: 35px;
+        text-align: left;
+        margin: 0;
+        padding: 20px 0;
+        color: black;
+        /* text-shadow: 3px 3px 1px blue; */
+    }
+
+    h3 {
+        font-size: 25px;
+        text-align: left;
+        margin: 0;
+        padding: 0px 0;
+        color: black;
+        text-decoration: underline;
+        /* text-shadow: 3px 3px 1px blue; */
+    }
     
     #jack-portrait {
         display: block;
@@ -77,6 +96,25 @@ nav a:visited {
         margin: 0;
         padding: 20px 0 0 0;
         color: black;
+        /* text-shadow: 3px 3px 1px blue; */
+    }
+
+    h2 {
+        font-size: 25px;
+        text-align: left;
+        margin: 0;
+        padding: 20px 0;
+        color: black;
+        /* text-shadow: 3px 3px 1px blue; */
+    }
+
+    h3 {
+        font-size: 15px;
+        text-align: left;
+        margin: 0;
+        padding: 10px 0;
+        color: black;
+        text-decoration: underline;
         /* text-shadow: 3px 3px 1px blue; */
     }
 
