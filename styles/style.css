@@ -76,6 +76,10 @@ nav a:visited {
         margin: 0 auto;
         width: 212px;
     }
+
+    #drone-sim-gif {
+        width: 300px;
+    }
     /* .elevator-pitch-box {
         margin: 20px 1024px auto 20px;
     } */
@@ -122,5 +126,9 @@ nav a:visited {
         display: block;
         margin: 0 auto;
         width: 50%;
+    }
+
+    #drone-sim-gif {
+        width: 100%;
     }
 }
