@@ -23,7 +23,7 @@ li {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
-    list-style-type: disc;
+    /*list-style-type: disc;*/
 }
 
 a:hover {
@@ -50,14 +50,51 @@ nav a:visited {
         transform-origin: 0 0; */
         /*border: 5px solid black;*/
     }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 10% 90%;
+    }
     
     h1 {
         font-size: 60px;
-        text-align: center;
-        margin: 0;
+        /* text-align: center; */
+        margin: 1%;
         padding: 20px 0;
         color: black;
         /* text-shadow: 3px 3px 1px blue; */
+    }
+
+    header h1 {
+        font-size: 60px;
+        text-align: end;
+        /* justify-self: end; */
+        grid-row: 1;
+        grid-column: 2;
+        margin: 1%;
+        padding: 20px 0;
+        color: black;
+        /* text-shadow: 3px 3px 1px blue; */
+    }
+
+    #moon {
+        width: 5%;
+        grid-row: 1;
+        grid-column: 2;
+        float: right;
+        margin: 10px;
+    }
+
+    nav {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .content-body {
+        grid-row: 2;
+        grid-column: 2;
+        justify-self: center;
     }
 
     h2 {
@@ -80,17 +117,23 @@ nav a:visited {
     }
     
     #jack-portrait {
-        display: block;
-        margin: 0 auto;
+        display: inline;
+        margin: 0 35%;
         width: 212px;
     }
 
     #drone-sim-gif {
         width: 300px;
     }
-    /* .elevator-pitch-box {
-        margin: 20px 1024px auto 20px;
-    } */
+    
+    footer img {
+        justify-self: center;
+        width: 5%
+    }
+
+    footer img:hover {
+        border: 0;
+    }
 }
 
 @media (max-width: 30em) {
