@@ -13,70 +13,103 @@
     <title>Software Development</title>
   </head>
   <body>
+    <div class="content">
+        <header>
+        <h1>Jack McWilliams <img id="moon" src="../images/full-moon.jpg" alt="Red Moon" /></h1>
+        </header>
 
-    <header>
-        <h1>Jack McWilliams</h1>
-    </header>
-
-    <nav>
+        <nav>
         <ul>
-          <li><a href="https://bruhphone.github.io">Home</a></li>
-          <li><a href="https://bruhphone.github.io/development">Development</a></li>
-          <li><a href="https://bruhphone.github.io/music">Music</a></li>
-          <li><a href="https://bruhphone.github.io/miscellany">Miscellany</a></li>
+            <li><a href="https://bruhphone.github.io">Home</a></li>
+            <li><a href="https://bruhphone.github.io/development">Development</a></li>
+            <li><a href="https://bruhphone.github.io/music">Music</a></li>
+            <li><a href="https://bruhphone.github.io/miscellany">Miscellany</a></li>
+            <li><a href="https://bruhphone.github.io/Jack-McWilliams-Resume.pdf">Resumé</a></li>
         </ul>
-    </nav>
+        </nav>
 
-    <h2>Software Development</h2>
-    <h3>Preamble</h3>
-    <p>I could write a novel about the causes and effects in my life
-        that moved me towards a career in software development. However,
-        I can name three formative experiences/things that form a loose outline:
-        <ol>
-            <li>Building and programming multiple Lego Mindstorms robots in elementary school;</li>
-            <li>Participating on an FRC team (5690 SubZero Robotics);</li>
-            <li>My father's love for asking questions, figuring out math, and reading Wikipedia.</li>
-        </ol>
-    </p>
+        <div class="content-body">
+            <h2>Software Development</h2>
+            <h3>Projects</h3>
+            <ul>
+                <li><a href="https://hub.docker.com/repository/docker/lmcwilliams135/drone_sim/general" title="Docker Hub" target="_blank">
+                    Drone simulation</a> built with C++ for web deployment
+                    <p><img id="drone-sim-gif" src="../images/drone-sim.gif" alt="Drone Sim gif"></img></p>
+                </li>
+                <li>Human/Robot interaction, vision research with UMN's 
+                    <a href="https://irvlab.cs.umn.edu/" title="IRVLab homepage" target="_blank">IRVLab</a></li>
+                <li><a href="https://devpost.com/software/locomotive-vgufn5" title="DevPost page" target="_blank">
+                    TransitPal</a>, a web tool for tracking public transit usage</li>
+            </ul>
+            <h3>Preamble</h3>
+            <p>I could write a novel about the causes and effects in my life
+                that moved me towards a career in software development. However,
+                I can name three formative experiences/things that form a loose outline:
+                <ol>
+                    <li>Building and programming multiple Lego Mindstorms robots in elementary school;</li>
+                    <li>Participating on an FRC team 5690 SubZero Robotics (see more on this below);</li>
+                    <li>My father's love for asking questions, figuring out math, and reading Wikipedia.</li>
+                </ol>
+            </p>
 
-    <h3>Projects</h3>
-    <ul>
-        <li><a href="https://hub.docker.com/repository/docker/lmcwilliams135/drone_sim/general" title="Docker Hub" target="_blank">
-            Drone simulation</a> built with C++ for web deployment
-            <p><img id="drone-sim-gif" src="../images/drone-sim.gif" alt="Drone Sim gif"></img></p>
-        </li>
-        <li>Human/Robot interaction, vision research with UMN's 
-            <a href="https://irvlab.cs.umn.edu/" title="IRVLab homepage" target="_blank">IRVLab</a></li>
-        <li><a href="https://devpost.com/software/locomotive-vgufn5" title="DevPost page" target="_blank">
-            TransitPal</a>, a web tool for tracking public transit usage</li>
-    </ul>
+            <h3>SubZero Robotics</h3>
+            <p>I joined the high school robotics team on the recommendation of a friend, and this resulted in my first contact with real code.
+                Real, ugly, functional code written by students just about as clueless as clueless comes (one of these students, a friend, is now a phenomenal programmer out in the private tech world).
+                I learned the pain of trying to interpret poorly-documented code, though it wasn’t until later that I learned what good documentation looked like!
+            </p>
+            <p>
+                We managed to build some great code, such as a system that interfaced with laser light detectors and conveyors to automatically manage a robot’s intake system.
+                We also wrote computer vision code interfacing with a Limelight camera and the robot’s drivetrain to perform auto-alignment to game targets;
+                this required a great deal of PID tuning and latency cutting, while the target finding system was largely plug and play minus a few vision-parameter tunings.
+            </p>
+            <p>
+                I had an awful time learning C++ as a first language; I feel that I only truly learned to program when I entered college and purposefully studied Python.
+                I wasted a lot of time trying to glean information off of esoteric C++ documentation instead of a well built tutorial designed for beginners.
+                But I felt so much pressure to simply get functional code on the robot when it was needed, and failed to see the excellent value in spending “work time” on learning.
+            </p>
+            <p>
+                This only scratches the surface of the many things I picked up on the robotics team, least of all leadership and communication techniques.
+                But those are stories for another place (the miscellany page).
+            </p>
 
-    <h3>Where I'm (planning on) going</h3>
-    <p><s>Aside from Scotland, home of my ancestors</s>
-        I am chiefly interested in lower level development, whether that be embedded systems
-        or OS/kernel development. Years of living with engineers and robots has drilled into
-        me a certain love for the physical applications of the digital world.
-    </p>
+            <h3>Where I'm (planning on) going</h3>
+            <p><s>Aside from Scotland, home of my ancestors</s>
+                I am chiefly interested in lower level development, whether that be embedded systems
+                or OS/kernel development. Years of living with engineers and robots has drilled into
+                me a certain love for the physical applications of the digital world.
+            </p>
 
-    <h3>All Hail C!</h3>
-    <p>I really love programming in C; it gives me the high of feeling like
-        I'm in control, while also being miles less painful than assembly. It's
-        also mostly non-paradigmatic, not quite Object Oriented but certainly not
-        functional. Instead, it provides an abstract interface to your machine's
-        resources that is unbiased and transparent.
-    </p>
-    <p>Obviously, C isn't suited to all computing tasks; for everyday problem
-        solving, I'm likely to default to Python (another favorite of mine).
-        But Python can never scratch that certain need-to-know-what-and-why itch
-        of mine like C can.
-    </p>
+            <h3>All Hail C!</h3>
+            <p>I really love programming in C; it gives me the high of feeling like
+                I'm in control, while also being miles less painful than assembly. It's
+                also mostly non-paradigmatic, not quite Object Oriented but certainly not
+                functional. Instead, it provides an abstract interface to your machine's
+                resources that is unbiased and transparent.
+            </p>
+            <p>Obviously, C isn't suited to all computing tasks; for everyday problem
+                solving, I'm likely to default to Python (another favorite of mine).
+                But Python can never scratch that certain need-to-know-what-and-why itch
+                of mine like C can.
+            </p>
 
-    <footer>
-        <p>
-            <a href="../index.html">
-                Back to Home
-            </a>
-        </p>
-    </footer>
+            <footer>
+            <div class="footer-icons">
+                <p>
+                <a href="https://www.linkedin.com/in/jack-mcwilliams-409192293" title="Jack M on LinkedIn" target="_blank">
+                    <img id="linkedin" src="../images/linkedin.png" alt="LinkedIn icon"/>
+                </a>
+                <a href="https://github.com/bruhphone" title="Jack M on Github" target="_blank">
+                    <img id="github" src="../images/github.png" alt="Github icon"/>
+                </a>
+                </p>
+            </div>
+            <p>
+                <a href="https://bruhphone.github.io">
+                    Back to Home
+                </a>
+            </p>
+            </footer>
+        </div>
+    </div>
   </body>
 </html>
