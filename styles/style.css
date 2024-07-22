@@ -1,11 +1,6 @@
 html {
     font-size: 10px;
     font-family: "Inconsolata", monospace;
-    /* font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100; */
 }
 
 p {
@@ -23,16 +18,19 @@ li {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
-    list-style-type: disc;
 }
 
-a:hover {
+.content-body li a:hover {
     color: red;
     border: 1px solid black;
 }
 
 a:link {
     color: blue;
+}
+
+footer .footer-icons a:link {
+    color: white;
 }
 
 nav a:visited {
@@ -46,18 +44,52 @@ nav a:visited {
         background-color: white;
         padding: 0 20px 20px 20px;
         text-wrap: wrap;
-        /* transform: scale(1.1);
-        transform-origin: 0 0; */
-        /*border: 5px solid black;*/
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 10% 90%;
     }
     
     h1 {
         font-size: 60px;
-        text-align: center;
-        margin: 0;
+        /* text-align: center; */
+        margin: 1%;
         padding: 20px 0;
         color: black;
         /* text-shadow: 3px 3px 1px blue; */
+    }
+
+    header h1 {
+        font-size: 60px;
+        text-align: end;
+        /* justify-self: end; */
+        grid-row: 1;
+        grid-column: 2;
+        margin: 1%;
+        padding: 20px 0;
+        color: black;
+        /* text-shadow: 3px 3px 1px blue; */
+    }
+
+    #moon {
+        width: 5%;
+        grid-row: 1;
+        grid-column: 2;
+        float: right;
+        margin: 10px;
+    }
+
+    nav {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .content-body {
+        grid-row: 2;
+        grid-column: 2;
+        justify-self: center;
     }
 
     h2 {
@@ -66,7 +98,6 @@ nav a:visited {
         margin: 0;
         padding: 20px 0;
         color: black;
-        /* text-shadow: 3px 3px 1px blue; */
     }
 
     h3 {
@@ -76,21 +107,23 @@ nav a:visited {
         padding: 0px 0;
         color: black;
         text-decoration: underline;
-        /* text-shadow: 3px 3px 1px blue; */
     }
     
     #jack-portrait {
-        display: block;
-        margin: 0 auto;
+        display: inline;
+        margin: 0 35%;
         width: 212px;
     }
 
     #drone-sim-gif {
         width: 300px;
     }
-    /* .elevator-pitch-box {
-        margin: 20px 1024px auto 20px;
-    } */
+    
+    footer img {
+        justify-self: center;
+        width: 5%;
+        margin: 1%;
+    }
 }
 
 @media (max-width: 30em) {
@@ -138,5 +171,18 @@ nav a:visited {
 
     #drone-sim-gif {
         width: 100%;
+    }
+
+    #moon {
+        width: 0%;
+        grid-row: 1;
+        grid-column: 2;
+        float: right;
+        margin: 10px;
+    }
+
+    footer img {
+        justify-self: center;
+        width: 10%;
     }
 }
