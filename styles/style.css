@@ -22,18 +22,19 @@ li {
 
 .content-body li a:hover {
     color: red;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 a:link {
     color: blue;
 }
 
-footer .footer-icons a:link {
+footer .footer-icons p a {
     color: white;
 }
 
-nav a:visited {
+nav a:visited,
+footer a:visited {
     color: blue;
 }
 
@@ -49,7 +50,7 @@ nav a:visited {
     .content {
         display: grid;
         grid-template-columns: 1fr 6fr;
-        grid-template-rows: 10% 90%;
+        grid-template-rows: 200px 90%;
     }
     
     h1 {
@@ -123,6 +124,10 @@ nav a:visited {
         justify-self: center;
         width: 5%;
         margin: 1%;
+    }
+
+    #linkedin {
+        margin: 1% 1% 1% 0%;
     }
 }
 
